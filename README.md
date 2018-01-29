@@ -79,8 +79,8 @@ Make this in Unity:
 
 [![Video](http://img.youtube.com/vi/wB4Ptbgwra0/0.jpg)](http://www.youtube.com/watch?v=wB4Ptbgwra0)
   
+What is happening:
 
-- What is happening:
 - Third person camera that follows the player tank, which is controlled with the wasd keys or joystick. Shoot with the a key or mouse click
 - The game always tries to keep 5 target tanks around the player
 - Tanks spawn every 2 seconds starting after 3 seconds into the game
