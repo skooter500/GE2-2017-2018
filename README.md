@@ -45,8 +45,48 @@
 - Week 12 - CA Submission & Demo - 50%
 - Exam - 30%
 
+## Week 2
+
+- Unity Fundamentals. Maks sure you know about:
+    - GameObjects
+    - GameComponents
+    - Transforms, positions, quaternions
+    - Lerping, Slerping and LookAt
+    - Getting and adding gamecomponents programmatically
+    - Awake, Start, Update
+    - Instiantiating GameObjects from prefabs
+    - Using materials an setting colours
+    - The fundamentals of lighting
+    - Using tags
+    - Using Coroutines
+    - Using Invoke
+
+### Lab
+### Learning Outcomes
+- Creating game objects from prefabs
+- Adding gamecomponents at runtime
+- Using a coroutine    
+
+Clone the repo for the course to get the tank game we started making in the class last week. Make a branch to store your changes to the code:
+```
+git clone http:github.com/skooter500/GP-2017-2018
+git checkout -b lab1
+```
+
+The version here has a 3rd person camera that follows the tank and also the tank can fire bullets. You can use this as starter code for todays lab.
+
+Make this in Unity:
+
+    [![YouTube](http://img.youtube.com/vi/wB4Ptbgwra0/0.jpg)](https://www.youtube.com/watch?v=wB4Ptbgwra0)
+
+- What is happening:
+- Third person camera that follows the player tank, which is controlled with the wasd keys or joystick. Shoot with the a key or mouse click
+- The game always tries to keep 5 target tanks around the player
+- Tanks spawn every 2 seconds starting after 3 seconds into the game
+- Bullets disappear after 5 seconds
+- When a bullet hits a target tank, it should explode. After 3 seconds the pieces sink into the floor and a new tank will spawn    
+
 ## Week 1 - Introduction to Unity
 - [Slides](https://drive.google.com/drive/folders/1HbqIE6_hwy0osMKDmEG5GgOAUeGy7NXV?usp=sharing)
-
 
 
