@@ -77,7 +77,8 @@ The version here has a 3rd person camera that follows the tank and also the tank
 
 Make this in Unity:
 
-    [![YouTube](http://img.youtube.com/vi/wB4Ptbgwra0/0.jpg)](https://www.youtube.com/watch?v=wB4Ptbgwra0)
+[![Video](http://img.youtube.com/vi/wB4Ptbgwra0/0.jpg)](http://www.youtube.com/watch?v=wB4Ptbgwra0)
+  
 
 - What is happening:
 - Third person camera that follows the player tank, which is controlled with the wasd keys or joystick. Shoot with the a key or mouse click
