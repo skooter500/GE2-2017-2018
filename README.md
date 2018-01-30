@@ -69,7 +69,7 @@
 
 Clone the repo for the course to get the tank game we started making in the class last week. Make a branch to store your changes to the code:
 ```
-git clone http:github.com/skooter500/GP-2017-2018
+git clone http://github.com/skooter500/GP-2017-2018
 git checkout -b lab1
 ```
 
