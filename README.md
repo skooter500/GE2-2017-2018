@@ -45,7 +45,40 @@
 - Week 12 - CA Submission & Demo - 50%
 - Exam - 30%
 
-## Week 2
+# Week 3
+## Lab
+## Learning Outcomes
+
+Today you guys can try making some physics objects in code.
+
+If you already have the repo for the course, you can pull the latest version:
+
+```
+cd GP-2017-2018
+git checkout master
+git pull
+```
+
+You might need to commit your changes to the branch you were working on before switching back to the master branch:
+
+```
+git add .
+git commit -m "My changes"
+```
+
+Open up the UnityIdioms project we were working on in the class last week and open scene3. This scene uses the FPS Camera controller we started work on in the class last week. Check out the code if you want to see how it works. You can move the camera using WASD and mouse look. You can steer the tank using IJKL and fire using space. Press Y to spawn a wall in front of the camera. Have a look the code in the class PhysicsSpawner to see how to do this
+
+### Task 1
+- Write a method CreateTower that creates a round tower of cubes in front of the tank in response to the U key. Do this using sin and cos to calculate the block positions. Try and make the tower stable.
+
+#### Task 2
+- Check out the video of my creatures:
+
+    [![Video](http://img.youtube.com/vi/Ycv309jyzus/0.jpg)](http://www.youtube.com/watch?v=Ycv309jyzus)
+
+- See if you can write a method called CreateTentacle that creates an articulated tentacle in code. You can use a squashed cube as a prefab, scaled to .1 on the Y axis and a hinge joint between the segments of the tentacle. Your method should take a parameter of the number of segments in the tentacle. Check out the Unity docs for [hinge joints](https://docs.unity3d.com/ScriptReference/HingeJoint.html).
+
+# Week 2
 
 - Unity Fundamentals. Maks sure you know about:
     - GameObjects

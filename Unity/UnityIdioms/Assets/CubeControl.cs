@@ -22,19 +22,19 @@ public class CubeControl : MonoBehaviour {
             Application.Quit();
         }
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.I))
         {
             transform.Translate(0, 0, moveSpeed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.K))
         {
             transform.Translate(0, 0, - moveSpeed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.J))
         {
             transform.Rotate(0, - rotationSpeed * Time.deltaTime, 0);
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.L))
         {
             transform.Rotate(0, rotationSpeed * Time.deltaTime, 0);
         }

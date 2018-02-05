@@ -18,18 +18,21 @@ public class PhysicsSpawner : MonoBehaviour {
                 GameObject cube = GameObject.Instantiate<GameObject>(cubePrefab);
                 float x = col * gap;
                 float y = 0.5f + (row * gap);
+                cube.transform.rotation = tank.transform.rotation;
                 cube.transform.position = tank.transform.TransformPoint(new Vector3(x, y, 5));
                 cube.GetComponent<Renderer>().material.color = Color.HSVToRGB(Random.Range(0.0f, 1.0f), 1, 0.8f);
             }
         }
     }
 
-	void Start () {
-        CreateWall(10, 10);	
-	}
+	void Start () {        
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            CreateWall(10, 10);
+        }
+    }
 }
