@@ -57,7 +57,7 @@ public class PhysicsSpawner : MonoBehaviour {
                 hj.autoConfigureConnectedAnchor = true;
 
                 JointSpring hingeSpring = hj.spring;
-                hingeSpring.spring = float.PositiveInfinity;
+                hingeSpring.spring = 1;
                 hingeSpring.damper = 1000000;
                 hingeSpring.targetPosition = 0;
                 hj.spring = hingeSpring;
@@ -107,7 +107,7 @@ public class PhysicsSpawner : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.U))
         {
-            CreateTower(3, 200, 12);
+            CreateTower(3, 100, 12);
         }
         if (Input.GetKeyDown(KeyCode.T))
         {

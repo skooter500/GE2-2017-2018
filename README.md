@@ -3,6 +3,7 @@
 [![Video](http://img.youtube.com/vi/n3uJ--m3f6Y/0.jpg)](http://www.youtube.com/watch?v=n3uJ--m3f6Y)
 
 ## Resources
+- [Class Facebook page](https://www.facebook.com/groups/153206655393239/)
 - [Course Notes](https://drive.google.com/drive/folders/1HbqIE6_hwy0osMKDmEG5GgOAUeGy7NXV?usp=sharing)
 - [Previous lab tests](https://1drv.ms/u/s!Ak7y2552PWCrkNACJ7n8qiU8UPRs9w)
 - [Assignment](ca.md)
@@ -45,7 +46,42 @@
 - Week 12 - CA Submission & Demo - 50%
 - Exam - 30%
 
-# Week 3
+# Week 4 - Introduction to steering behaviours
+- Lecture notes
+- [Craig Reynolds original paper](https://www.red3d.com/cwr/papers/1999/gdc99steer.pdf)
+- [Steering behaviours in Java](https://www.red3d.com/cwr/steer/)
+
+## Lab
+## Learning Outcomes
+- Learn how to use gizmos
+- Use what you know about Unity to program a path following behaviour
+
+Join the [class Facebook group](https://www.facebook.com/groups/153206655393239/)!
+
+Anyone who implements their assignment using the [new Unity C# job system](https://www.youtube.com/watch?v=tGmnZdY5Y-E) will get a guaranteed first in the assignment.
+
+Check out this video:
+
+[![Video](http://img.youtube.com/vi/eAfpnWI5jEI/0.jpg)](http://www.youtube.com/watch?v=eAfpnWI5jEI)
+
+The scene contains a path object with a path script attached. The children of the path object are the waypoints. The path script implements the method OnDrawGizmos to draw lines between the waypoints on the path and to draw a sphere at each of the waypoints. The blue box is following the path. Notice that it turns to face each of the waypoints smoothly and also that it banks as it turns. Today you can try and program this behaviour. Here are some steps you could follow:
+
+Implement the Path script that contains a ```List<Vector3>``` containing the waypoints. The path script should populate this list from the attached children. It should also draw gizmos so that the path can be visualised. Check out the [Unity Gizmo documentation](https://docs.unity3d.com/ScriptReference/Gizmos.html). Gizmos only show up in the scene view in Unity and drawing gizmos will not impact on the performance of your game after you export it from Unity.
+
+Create a path using the Path script you made.
+
+Create the blue box and attach a script to it. You could call the script PathFollower. Add a a public field for the Path and drag the Path you made onto this in the Unity editor. Now write code to get the box to move from waypoint to waypoint on the path. When it reaches the last waypoint, it should loop back to the 0th waypoint again. There are lots of ways to do this. Here are some suggestions:
+
+- Lerp from one point to the next and use LookAt
+- Use a Rigidbody and generate forces to push the box from one waypoint to the next
+- Use vectors
+- Use [steering behaviours](https://www.red3d.com/cwr/steer/). This is the method we will explore in the class this week.
+
+# Week 3 - Controllers & Physics
+# Lecture
+- We made the FPSControler and the ForceController. Get the code from the repo
+- We also made the teniclce using rigid bodies and joints
+
 ## Lab
 ## Learning Outcomes
 
@@ -78,7 +114,7 @@ Open up the UnityIdioms project we were working on in the class last week and op
 
 - See if you can write a method called ```CreateTentacle``` that creates an articulated tentacle in code. You can use a squashed cube as a prefab, scaled to .1 on the Y axis and a hinge joint between the segments of the tentacle. Your method should take a parameter of the number of segments in the tentacle. Check out the Unity docs for [hinge joints](https://docs.unity3d.com/ScriptReference/HingeJoint.html).
 
-# Week 2
+# Week 2 - Unity Fundamentals
 
 - Unity Fundamentals. Maks sure you know about:
     - GameObjects
