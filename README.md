@@ -46,10 +46,47 @@
 - Week 12 - CA Submission & Demo - 50%
 - Exam - 30%
 
+# Week 5 - 
+- Pursue & offset pursue
+- A better integration function
+- A better steering behaviours framework that uses components
+
+## Lab
+## Learning outcomes
+- Discover the limits of Unity physics
+- Use the equations of motion to simulate some stuff
+- Maybe use the Unity profiler!
+
+### Task 1
+
+Check out the seek, arrive and flee behaviours we made in the class last week. You can open scene4.unity to find a scene that uses them and you will find the code in Boid.cs
+
+Modify the scene to use a Rigidbody to perform the integration of the calculated force and see if you can achieve the same effect as our custom integration function. Later we will add banking. This might be tricky to do with a rigidbody (or it might not I don't really know!).
+
+### Task 2
+
+The height of the empire state building is 381m. Acceleration due to the force of gravity is 9.9m/s/s. Write c# code to calculate how long it will take for an object to fall to ground level from the top of the empire state building. You can use this equation:
+
+∆s = v<sub>0</sub>t + ½at<sup>2</sup>
+
+Where ∆s is the distance travelled, v<sub>0</sub> is the starting speed, t is time and a is acceleration. Here are [some notes that explain how this equation is derived](https://1drv.ms/p/s!Ak7y2552PWCrjNho5TTf_aHBLOMy0Q).
+
+Now, create a scene and simulate the object falling using:
+
+- A Rigidbody
+- An Euler integration function
+
+And see if the time taken in the simulations matches the ideal time calculated using the equation.
+
+### Task 3
+
+Send me your github username and I will add you to the Forms repo. You can clone the repo. To get the project to compile and run, you have to add the SteamVR thing from the Unity assets store. Use the Unity profiler to profile the running game and see if you can come up with any ideas about how I can improve the frame rate. You can try replacing the integration function in Boid.cs with a RigidBody for example. Special gold star to anyone who comes up with some ways to optomise the code today! I will be doing visuals at the [Energy Collective party this Saturday](https://www.facebook.com/events/185048675577427/) in the Voodoo Lounge with the project from 11pm-3am. Welcome to come along!
+
 # Week 4 - Introduction to steering behaviours
 - Lecture notes
 - [Craig Reynolds original paper](https://www.red3d.com/cwr/papers/1999/gdc99steer.pdf)
 - [Steering behaviours in Java](https://www.red3d.com/cwr/steer/)
+- We implemented seek arrive and flee steering behaviours in the class. Check out scene4.unity
 
 ## Lab
 ## Learning Outcomes
