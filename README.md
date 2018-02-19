@@ -46,7 +46,7 @@
 - Week 12 - CA Submission & Demo - 50%
 - Exam - 30%
 
-# Week 5 - 
+# Week 5 - Pursue & offset pursue, also behaviours with components
 - Pursue & offset pursue
 - A better integration function
 - A better steering behaviours framework that uses components
@@ -65,7 +65,7 @@ Modify the scene to use a Rigidbody to perform the integration of the calculated
 
 ### Task 2
 
-The height of the empire state building is 381m. Acceleration due to the force of gravity is 9.9m/s/s. Write c# code to calculate how long it will take for an object to fall to ground level from the top of the empire state building. You can use this equation:
+The height of the empire state building is 381m. Acceleration due to the force of gravity is 9.8m/s/s. Write c# code to calculate how long it will take for an object to fall to ground level from the top of the empire state building. You can use this equation:
 
 ∆s = v<sub>0</sub>t + ½at<sup>2</sup>
 
