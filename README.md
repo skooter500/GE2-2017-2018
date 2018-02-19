@@ -80,7 +80,7 @@ And see if the time taken in the simulations matches the ideal time calculated u
 
 ### Task 3
 
-Send me your github username and I will add you to the Forms repo. You can clone the repo. To get the project to compile and run, you have to add the SteamVR thing from the Unity assets store. Use the Unity profiler to profile the running game and see if you can come up with any ideas about how I can improve the frame rate. You can try replacing the integration function in Boid.cs with a RigidBody for example. Special gold star to anyone who comes up with some ways to optomise the code today! I will be doing visuals at the [Energy Collective party this Saturday](https://www.facebook.com/events/185048675577427/) in the Voodoo Lounge with the project from 11pm-3am. Welcome to come along!
+Send me your github username and I will add you to the Forms repo. You can clone the repo. To get the project to compile and run, you have to add the SteamVR thing from the Unity assets store. Use the Unity profiler to profile the running game and see if you can come up with any ideas about how I can improve the frame rate. You can try replacing the integration function in Boid.cs with a Rigidbody for example. Special gold star to anyone who comes up with some ways to optimise the code today! I will be doing visuals at the [Energy Collective party this Saturday](https://www.facebook.com/events/185048675577427/) in the Voodoo Lounge with the project from 11pm-3am. Welcome to come along!
 
 # Week 4 - Introduction to steering behaviours
 - Lecture notes
