@@ -73,10 +73,6 @@ Out Boid class is getting big so now it's time to refactor the code so that each
 
 Try and make this predator prey simulation. The prey will follow a path until the predator comes into range. When the perdator is is range the prey will attack the predator by shooting at it. It only shoots at the predator if it is inside the field of view. The predator will get close to the prey, but will flee from the prey if the prey attacks it:
 
-[![Video](http://img.youtube.com/vi/SqThPN_ogJE/0.jpg)](http://www.youtube.com/watch?v=SqThPN_ogJE)
-
-Try and make this predator prey simulation. The prey will follow a path until the predator comes into range. When the perdator is is range the prey will attack the predator by shooting at it. It only shoots at the predator if it is inside the field of view. The predator will get close to the prey, but will flee from the prey if the prey attacks it:
-
 [![YouTube](http://img.youtube.com/vi/SqThPN_ogJE/0.jpg)](https://www.youtube.com/watch?v=SqThPN_ogJE)
 
 
