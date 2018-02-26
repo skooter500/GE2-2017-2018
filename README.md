@@ -46,10 +46,42 @@
 - Week 12 - CA Submission & Demo - 50%
 - Exam - 30%
 
-# Week 5 - Pursue & offset pursue, also behaviours with components
-- Pursue & offset pursue
+# Week 6
 - A better integration function
 - A better steering behaviours framework that uses components
+
+## Lab
+### Learning Outcomes
+- Refactor the code to use components
+- Use the pursue steering behaviour to set up a predator/prey simulation
+
+
+## Task 1
+Out Boid class is getting big so now it's time to refactor the code so that each behaviour is a seperate component.
+
+- Make an abstract base class called SteeringBehaviour that extends MonoBehavior
+- Add one abstract method ```public abstract Vector3 Calculate()```
+- Add a public field for *weight* of type float and also add a field for the Boid
+- Take each of the behaviours we wrote (seek, arrive, flee, pursue, offsetpursue) and make each of them extend SteeringBehaviour. Do the calculation of the force in Calculate
+- Give the Boid a field of type ```SteeringBehaviour[]```
+- In the setup method of the Boid class, call GetComponents to get all the attached SteeringBehaviours
+- Assign the boid field of each attached behaviour
+- In the Boid Update method, iterate over the activated behaviours and sum the generated forces * the weights
+- This will become more useful when we decide to combine the behaviours together
+
+## Task 2
+
+Try and make this predator prey simulation. The prey will follow a path until the predator comes into range. When the perdator is is range the prey will attack the predator by shooting at it. It only shoots at the predator if it is inside the field of view. The predator will get close to the prey, but will flee from the prey if the prey attacks it:
+
+[![Video](http://img.youtube.com/vi/SqThPN_ogJE/0.jpg)](http://www.youtube.com/watch?v=SqThPN_ogJE)
+
+Try and make this predator prey simulation. The prey will follow a path until the predator comes into range. When the perdator is is range the prey will attack the predator by shooting at it. It only shoots at the predator if it is inside the field of view. The predator will get close to the prey, but will flee from the prey if the prey attacks it:
+
+[![YouTube](http://img.youtube.com/vi/SqThPN_ogJE/0.jpg)](https://www.youtube.com/watch?v=SqThPN_ogJE)
+
+
+# Week 5 - Pursue & offset pursue, also behaviours with components
+- Pursue & offset pursue
 
 ## Lab
 ## Learning outcomes
