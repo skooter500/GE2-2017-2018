@@ -51,7 +51,6 @@ public class ForceController : MonoBehaviour {
 
     // Update is called once per frame
     void FixedUpdate () {
-        Debug.Log(Time.deltaTime);
 
         float walk = Input.GetAxis("Vertical");
         Walk(walk * power * Time.deltaTime);

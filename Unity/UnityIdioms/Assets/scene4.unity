@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -269,8 +269,10 @@ GameObject:
   - component: {fileID: 1873515997}
   - component: {fileID: 1873515996}
   - component: {fileID: 1873515995}
+  - component: {fileID: 1873516000}
+  - component: {fileID: 1873516001}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: seeker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -288,14 +290,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: {x: 0, y: 0, z: 0}
-  velocity: {x: 0, y: 0, z: 0}
   acceleration: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
   mass: 1
-  maxForce: 10
-  maxSpeed: 10
-  target: {fileID: 1952575256}
-  fleeDistance: 5
-  slowingDistance: 10
+  maxSpeed: 5
 --- !u!23 &1873515996
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -362,6 +360,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1873516000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1873515994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91bb0ee1337b4c04e86f0cf83ab0e759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  targetGameObject: {fileID: 1952575256}
+  target: {x: -7.83, y: 0, z: 3.68}
+--- !u!114 &1873516001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1873515994}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91bc861a814cb584ca99e28d738e9ca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
+  slowingDistance: 15
+  deceleration: 0.9
+  targetGameObject: {fileID: 1952575256}
 --- !u!1 &1952575256
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +406,7 @@ GameObject:
   - component: {fileID: 1952575258}
   - component: {fileID: 1952575257}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
