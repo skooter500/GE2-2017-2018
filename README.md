@@ -49,6 +49,7 @@
 # Week 6
 - A better integration function
 - A better steering behaviours framework that uses components
+- [Submit the first CA deliverable](https://docs.google.com/forms/u/1/d/e/1FAIpQLScz8S3HAHrQkhlDSV41hifpS2lDyQt6na3TTlZ2a_hkz_ZNDw/viewform)
 
 ## Lab
 ### Learning Outcomes
