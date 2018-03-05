@@ -46,6 +46,46 @@
 - Week 12 - CA Submission & Demo - 50%
 - Exam - 30%
 
+# Week 7 - Harmoinc steering behaviours
+- [Harmonic motion](http://hyperphysics.phy-astr.gsu.edu/hbase/shm.html)
+
+## Lab
+
+Check out scene5 for an example of the jitter wander behaviour we developed last week. In today's lab we will create a steering behaviour that can be used to make all kinds of swimming creatures. Open scene6 and there are 3 "creatures". The creature on the left uses the wander steering behaviour. The other two creatures have a behaviour called Harmonic attached that currently does nothing. This is what the creatures should look like after you implement the Harmoinc behaviour:
+
+[![YouTube](http://img.youtube.com/vi/noL6Z3US2Gc/0.jpg)](https://www.youtube.com/watch?v=noL6Z3US2Gc)
+
+The middle creature is seeking a point on a sphere projected in front of the boid that oscillates on the horizontal plane. The right creature is seeking a point on a sphere that oscillates on the vertical plane. 
+
+You might find this processing sketch useful in working out how to implement these behaviours: 
+
+```Java
+void setup()
+{
+  size(500, 500);
+  cx = width / 2;
+  cy = height / 2;
+}
+
+float freq = 1.0f;
+float theta = 0;
+float amplitude = 60;
+float radius = 200;
+float cx, cy;
+float timeDelta = 1 / 60.0f;
+void draw()
+{
+  background(0);
+  float angle = sin(theta) * radians(amplitude);
+  float x = cx + sin(angle) * radius;
+  float y = cy + cos(angle) * radius;
+  noStroke();
+  fill(255);
+  ellipse(x, y, 50, 50);
+  theta += TWO_PI * freq * timeDelta;
+}
+```
+
 # Week 6
 - A better integration function
 - A better steering behaviours framework that uses components
