@@ -80,7 +80,7 @@ public class Boid : MonoBehaviour {
         Vector3 globalUp = new Vector3(0, 0.2f, 0);
         Vector3 accelUp = acceleration * 0.05f;
         Vector3 bankUp = accelUp + globalUp;
-        smoothRate = Time.deltaTime * 3.0f;
+        smoothRate = Time.deltaTime * 3f;
         Vector3 tempUp = transform.up;
         tempUp = Vector3.Lerp(tempUp, bankUp, smoothRate);
 
