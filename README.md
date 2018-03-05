@@ -48,6 +48,7 @@
 
 # Week 7 - Harmoinc steering behaviours
 - [Harmonic motion](http://hyperphysics.phy-astr.gsu.edu/hbase/shm.html)
+- [Procedural animation](https://www.roadtovr.com/the-need-for-procedural-animation-in-virtual-reality-ocean-rift-developer/3/)
 
 ## Lab
 
@@ -85,6 +86,13 @@ void draw()
   theta += TWO_PI * freq * timeDelta;
 }
 ```
+
+Advanced! 
+
+You can add more variety to the Harmonic behaviour by using either of these two techniques:
+
+- Use Perlin noise to generate the oscillation rather than harmonic motion. 
+- Write an additional component called a HarmonicController that changes the frequency and amplitude every few seconds in a co-routine. You should lerp to the new values.
 
 # Week 6
 - A better integration function
