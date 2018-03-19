@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class Harmonic : SteeringBehaviour
 {
-
-    public float frequency = 1.0f; // How often to oscillate
-    public float amplitude = 30; // The angle to oscillate
+    public float frequency = 1.0f; 
+    public float amplitude = 30; 
     public float radius = 10;
     public float distance = 15;
 
-    public Axis direction = Axis.Horizontal; // Oscillation direction
+    public Axis direction = Axis.Horizontal; 
     public enum Axis { Horizontal, Vertical };
 
-    float theta = 0.0f; // This will cycle between 0 and 2pi
+    float theta = 0.0f; 
 
     Vector3 target;
     Vector3 worldTarget;
@@ -31,10 +30,9 @@ public class Harmonic : SteeringBehaviour
         }
     }
 
-    // Use this for initialization
-    void Start()
+    public void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -68,6 +66,4 @@ public class Harmonic : SteeringBehaviour
         theta += Time.deltaTime * Mathf.PI * 2.0f * frequency;
         return boid.SeekForce(worldTarget);
     }
-
-
 }

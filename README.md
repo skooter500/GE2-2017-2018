@@ -46,6 +46,25 @@
 - Week 12 - CA Submission & Demo - 50%
 - Exam - 30%
 
+# Week 8 - Obstacle Avoidance
+- How are the feelers calculated?
+- What direction do they point?
+- How many are there? Whys this number?
+- How does the behaviour handle holes in the colliders?
+- Does the speed of the boid matter?
+- What direction is the force generated?
+- WHat alternatives are there to this?
+- How does the behaviour avoid certain obstacles while ignoring others?
+- How often are the feelers calculated and why?
+- How does the behaviour take priority over other behaviours?
+- How would you improve the behaviour?
+- How does it differ from Craig Reynolds avoidance behaviours?
+
+![Image](images/IMAG0190.jpg)
+
+# Lab
+Check out scene6 for an example of obstacle avoidance with seek. To fully explore the awesome power of this behaviour, set up a scene with a spawner object that creates lots of creatures with wander, harmonic and obstacle avoidance and the spine animation procedural animation from a prefab inside a sphere with some obstacles and watch the creatures explore the environment without crashing into each other or the environment. You can set up seperate layers for the environment and for the creatures and set the layermask on the avoidance behaviour. Don't forget to set the layermask on each of the creatures body parts. Also you will have to adjust the max force, max speed, weights and priorities to get the perfect behaviour.
+
 # Week 7 - Harmoinc steering behaviours
 - [Harmonic motion](http://hyperphysics.phy-astr.gsu.edu/hbase/shm.html)
 - [Procedural animation](https://www.roadtovr.com/the-need-for-procedural-animation-in-virtual-reality-ocean-rift-developer/3/)
