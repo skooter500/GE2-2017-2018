@@ -53,8 +53,8 @@ public class Boid : MonoBehaviour {
     {
         float soFar = runningTotal.magnitude;
         float remaining = maxForce - soFar;
-        force = Vector3.ClampMagnitude(force, remaining);        
-        runningTotal += force;
+        Vector3 clampedforce = Vector3.ClampMagnitude(force, remaining);        
+        runningTotal += clampedforce;
         return (force.magnitude >= remaining);
     }
     
