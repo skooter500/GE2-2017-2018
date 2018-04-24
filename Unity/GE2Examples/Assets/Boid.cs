@@ -49,13 +49,13 @@ public class Boid : MonoBehaviour {
         return desired - velocity;
     }
 
-    private bool AccumulateForce(ref Vector3 runningTotal, ref Vector3 force)
+    private bool AccumulateForce(ref Vector3 force, ref Vector3 behaviourForce)
     {
-        float soFar = runningTotal.magnitude;
+        float soFar = force.magnitude;
         float remaining = maxForce - soFar;
-        Vector3 clampedforce = Vector3.ClampMagnitude(force, remaining);        
-        runningTotal += clampedforce;
-        return (force.magnitude >= remaining);
+        Vector3 clampedforce = Vector3.ClampMagnitude(behaviourForce, remaining);        
+        force += clampedforce;
+        return (behaviourForce.magnitude >= remaining);
     }
     
     Vector3 Calculate()
