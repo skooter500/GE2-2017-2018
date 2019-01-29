@@ -1260,7 +1260,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1142442848}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25490f5025587864f893f039b3546173, type: 3}
   m_Name: 
@@ -1834,7 +1834,7 @@ MonoBehaviour:
   mass: 1
   damping: 0.01
   maxSpeed: 5
-  maxForce: 8
+  maxForce: 5
 --- !u!23 &1912422626
 MeshRenderer:
   m_ObjectHideFlags: 0
